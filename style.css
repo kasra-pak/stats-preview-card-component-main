@@ -21,6 +21,22 @@ body {
   margin: 0;
 }
 
+.banner {
+  position: relative;
+}
+
+.banner::after {
+  content: '';
+  background-color: hsla(277, 75%, 40%, 55%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  
+  z-index: 100;
+}
+
 img {
   width: 100%;
   display: block;
@@ -83,9 +99,28 @@ header {
 }
 
 @media screen and (min-width: 376px) {
-  hello
+ 
   .statistics {
     flex-direction: row;
+    text-align: left;
+  }
+
+  .card-container {
+    flex-direction: column;
+    flex-flow: row-reverse wrap;
+  }
+
+  .banner {
+    flex:1 1 100%;
+  }
+
+  .statistics {
+    flex: 0 1 50%;
+    
+  }
+
+  header {
+    flex: 0 1 50%;
   }
 
 }
