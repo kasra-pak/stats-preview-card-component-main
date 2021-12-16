@@ -83,7 +83,7 @@ header {
 }
 
 @media screen and (min-width: 376px) {
-  
+  hello
   .statistics {
     flex-direction: row;
   }
